@@ -241,7 +241,8 @@ table {
      object-position: center;
 }
 
-.hero_pic .hero_pic__img {
+.coach__pic .coach__img, .popup__pic .popup__img, .popup__fb .popup__ico,
+.popup__ig .popup__ico, .hero_pic .hero_pic__img {
   display: block;
   width: 100%;
   height: 100%;
@@ -353,6 +354,12 @@ body {
   font-size: 1.8rem;
   line-height: 1.6;
   color: #141024;
+}
+.main_font.main_font--red {
+  color: #D52027;
+}
+.main_font.main_font--popup {
+  color: rgba(20, 16, 36, 0.7);
 }
 
 .section_title_font {
@@ -648,4 +655,229 @@ body {
 .footer__copyright {
   font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.coaches_content {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 116rem;
+  height: 74.6rem;
+  overflow: hidden;
+}
+
+.slider__line {
+  position: relative;
+  left: 0;
+  display: flex;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  width: 196rem;
+  height: 64.6rem;
+  margin-bottom: 6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider__element {
+  width: 36rem;
+  height: 64.6rem;
+}
+
+.coach__pic {
+  display: block;
+  width: 36rem;
+  height: 50rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: #F9F9F9;
+}
+.coach__name {
+  margin-bottom: 1rem;
+}
+
+.coach__specialization {
+  margin-bottom: 2rem;
+}
+
+.coach__button {
+  font-family: "Jost", sans-serif;
+  color: #D52027;
+}
+
+.slider__nav_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider_nav__button {
+  display: flex;
+  -moz-column-gap: 1.2rem;
+       column-gap: 1.2rem;
+}
+
+.slider_nav__prew,
+.slider_nav__next {
+  display: block;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #141024;
+}
+.slider_nav__prew > span,
+.slider_nav__next > span {
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  background-color: #fff;
+}
+
+.slider_nav__prew > span:nth-child(1) {
+  left: 1.4rem;
+  top: 2rem;
+  transform: rotate(45deg);
+}
+
+.slider_nav__prew > span:nth-child(2) {
+  left: 1.4rem;
+  top: 1.5rem;
+  transform: rotate(-45deg);
+}
+
+.slider_nav__next > span:nth-child(1) {
+  left: 1.4rem;
+  top: 2rem;
+  transform: rotate(-45deg);
+}
+
+.slider_nav__next > span:nth-child(2) {
+  left: 1.4rem;
+  top: 1.5rem;
+  transform: rotate(45deg);
+}
+
+.slider_nav__scroll_bar {
+  width: 36rem;
+  height: 0.5rem;
+  border-radius: 4rem;
+  background-color: #F9F9F9;
+}
+.slider_nav__scroll_bar > span {
+  display: block;
+  position: relative;
+  left: 0;
+  width: 21.6rem;
+  height: 0.5rem;
+  border-radius: 4rem;
+  transition: all 0.3s ease-in-out;
+  background-color: #141024;
+}
+
+.popup {
+  width: 94rem;
+  height: 76.8rem;
+  padding: 4rem 4rem;
+  border-radius: 2rem;
+  border: 0.1rem solid rgba(20, 16, 36, 0.11);
+  background-color: #fff;
+}
+
+.popup__top {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.popup__pic {
+  display: block;
+  width: 16rem;
+  height: 22.2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.popup_top__deskr {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.poup__media {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.popup__fb,
+.popup__ig {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+}
+.popup__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tabs_nav {
+  display: flex;
+  -moz-column-gap: 18rem;
+       column-gap: 18rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid rgba(20, 16, 36, 0.11);
+}
+
+.tabs__nav {
+  margin-bottom: 2rem;
+}
+
+.tabs_font {
+  font-size: 2rem;
+  color: #141024;
+}
+
+.tabs_content__item {
+  display: none;
+  overflow-y: auto;
+  height: 35.4rem;
+}
+
+.tabs_content__item.active {
+  display: block;
+}
+
+.tabs_nav__link.active {
+  color: #D52027;
+}
+
+.education__basic {
+  margin-bottom: 4rem;
+}
+
+.education__title {
+  margin-bottom: 2rem;
+}
+
+.coach__popup {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(20, 16, 36, 0.4);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.coach__popup.active {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
